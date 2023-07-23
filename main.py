@@ -1,5 +1,4 @@
 import os
-from symbol import yield_arg
 from Config import conTheme as ctm
 from sceneManager import sceneManager
 import time 
@@ -12,7 +11,7 @@ config = {
 }
 #print(dV.__dir__())'''
 
-def main(args=None):
+def main():
     sTime = time.asctime() # type: ignore
     theme = ctm.defaultTheme
     user = os.environ.get('USERNAME',)

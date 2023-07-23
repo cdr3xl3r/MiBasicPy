@@ -4,11 +4,11 @@ from Config import conTheme as ctm
 
 def sceneManager(theme,titleName):
     
-    thUltraDark = ctm.getTheme(theme,'DKMODE','ultradark')
-    thDark = ctm.getTheme(theme,'DKMODE','dark')
-    thMedium = ctm.getTheme(theme,'DKMODE','medium')
-    thLight = ctm.getTheme(theme,'DKMODE','light')
-    thUltraLight = ctm.getTheme(theme,'DKMODE','ultraLight')
+    thUltraDark = ctm.getTheme(theme,'DK_MODE','ultradark')
+    thDark = ctm.getTheme(theme,'DK_MODE','dark')
+    thMedium = ctm.getTheme(theme,'DK_MODE','medium')
+    thLight = ctm.getTheme(theme,'DK_MODE','light')
+    thUltraLight = ctm.getTheme(theme,'DK_MODE','ultraLight')
     thWindowGeo = ctm.getTheme(theme,'WIND','geometry')
     
     
