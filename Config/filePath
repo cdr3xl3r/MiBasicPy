@@ -1,0 +1,5 @@
+[WIND]
+bg = gray14
+fg = 404
+geometry = "1600x1100+" + str(x) + "+" + str(y)
+

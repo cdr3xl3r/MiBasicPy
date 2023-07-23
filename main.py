@@ -1,10 +1,19 @@
 import os
-from dotenv import dotenv_values
+from Config import conTheme as ctm
+from sceneManager import sceneManager
 
+'''#from dotenv import dotenv_values as dV
 config = {
-    **dotenv_values(".env.shared"),  # load shared development variables
-    **dotenv_values(".env.secret"),  # load sensitive variables
-    **os.environ,  # override loaded values with environment variables
+    **dV(".env.shared"),  # load shared development variables
+    ** dV(".env.secret"),  # load sensitive variables
+    ** os.environ,  # override loaded values with environment variables
 }
+#print(dV.__dir__())'''
+
 def main(args=None):
-    
+    theme = ctm.defaultTheme
+    sceneManager(theme)
+
+print(os.environ.get('USERNAME',))
+main()
+
