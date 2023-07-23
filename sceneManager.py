@@ -2,7 +2,7 @@ import tkinter as tk
 from Config import conTheme as ctm
 
 
-def sceneManager(theme):
+def sceneManager(theme,titleName):
     
     thUltraDark = ctm.getTheme(theme,'DKMODE','ultradark')
     thDark = ctm.getTheme(theme,'DKMODE','dark')
@@ -14,7 +14,7 @@ def sceneManager(theme):
     
     
     window = tk.Tk()
-    window.title('MY-APP')
+    window.title(titleName)
     window.configure(bg=thDark)
     # window.eval('tk::PlaceWindow . center')
     # window.columnconfigure(0, minsize=250)

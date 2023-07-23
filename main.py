@@ -1,6 +1,8 @@
 import os
+from symbol import yield_arg
 from Config import conTheme as ctm
 from sceneManager import sceneManager
+import time 
 
 '''#from dotenv import dotenv_values as dV
 config = {
@@ -11,8 +13,10 @@ config = {
 #print(dV.__dir__())'''
 
 def main(args=None):
+    sTime = time.asctime() # type: ignore
     theme = ctm.defaultTheme
-    sceneManager(theme)
+    user = os.environ.get('USERNAME',)
+    sceneManager(theme,f'User: {user} Login@: {sTime}')
 
 print(os.environ.get('USERNAME',))
 main()
