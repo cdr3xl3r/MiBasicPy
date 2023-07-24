@@ -39,4 +39,4 @@ def configMeManager(txt):
         for line in file:
             if not line:
                 line."""
-configMeManager()
+#configMeManager()
