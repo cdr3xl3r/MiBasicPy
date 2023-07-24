@@ -39,5 +39,5 @@ def getTheme(theme,sec,opt):
     config.read(tFile)
     var = config.get(sec, opt)
     return var   
-#conThemeInstaller()
+conThemeInstaller()
         
